@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-	
-	<head>
-	<title></title>
-	 <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<h2>Portal Interno de Seguridad</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<form action="https://donabelj.github.io/ProyectoWeb/portal.html" method="post"><label>Usuario:</label><br/>
-<input name="username" type="text"/><br/>
-<br/>
-<label>Contraseña:</label><br/>
-<input type="password"/><br/>
-<br/>
-<input type="submit" value="Actualizar"/> </form>
+    <title>Redireccionando con Formulario</title>
+  </head>
+  <body>
+    <form id="redirectForm" action="https://donabelj.github.io/ProyectoWeb/portal.html" method="get">
+      <!-- Puedes incluir campos ocultos si necesitas pasar datos -->
+      <input name="username" type="text" /><br />
+      <br />
+      <label>Contraseña:</label><br />
+      <input type="password" /><br />
+      <br />
+      <input type="submit" value="Actualizar" />
+    </form>
 
-
-</body>
-
+    <script>
+      document.getElementById("redirectForm").submit();
+    </script>
+  </body>
 </html>
